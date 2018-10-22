@@ -59,7 +59,7 @@ if __name__=="__main__":
     headers = ['Name','Code','Abbr']
 
     # pickle a pandas DataFrame of the table
-    if len(sys.argv) > 0 and sys.argv[1] == 'soup':
+    if len(sys.argv) > 1 and sys.argv[1] == 'soup':
         pickle_data.pickle_data(get_fips_soup(sauce, table_summary, headers), './fips.pickle')
     else:
         pickle_data.pickle_data(get_fips(sauce, headers), './fips.pickle')
