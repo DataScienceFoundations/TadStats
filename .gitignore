@@ -105,3 +105,4 @@ venv.bak/
 
 # project-specific files
 census_api.py
+/nsfg/data/*
